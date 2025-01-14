@@ -1,5 +1,7 @@
 # Heart Failure Analysis
 
+![screenshot](assets/heart_failure_dashboard_preview.png)
+
 This repository contains an analysis and modeling of a dataset involving 299 patients who have experienced prior incidents of heart failure. The goal is to explore the dataset, build predictive models, and visualize the results to gain insights into heart failure prediction.
 
 ## Files
