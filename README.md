@@ -10,6 +10,19 @@ This repository contains an analysis and modeling of a dataset involving 299 pat
 - `heart_failure_predictor.pkl`: Saved model for heart failure prediction.
 
 ## Installation
-Clone this repository via:
+1. Clone this repository:
    ```bash
    git clone https://github.com/saltyjared/heart-failure-analysis.git
+
+2. Install required packages:
+   ```bash
+   pip install -r requirements.txt
+
+## Usage
+1. View and run the EDA/modeling notebooks in a Jupyter environment
+2. Launch Dash dashboard with:
+   ```bash
+   python 3_dashboard_jpg_2025-01-06.py
+   ```
+   Available at `http://127.0.0.1:8050/`.
+   
