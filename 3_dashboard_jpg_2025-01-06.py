@@ -56,7 +56,13 @@ universal_style = {
 }
 
 app.layout = html.Div([
-    html.H1("Heart Failure Clinical Records Dashboard", style={"textAlign": "center", "marginBottom": "20px", "fontSize": "28px"}),
+    html.Header([
+        html.H1("Heart Failure Analysis", style={"textAlign": "center", "marginBottom": "20px"}),
+        html.Div([
+            html.A("EDA", href="/assets/1_eda_jpg_2024-12-13.html", target="_blank", style={"marginRight": "20px", "textDecoration": "underline", "color": "#0066cc"}),
+            html.A("Modeling", href="/assets/2_modeling_jpg_2024-12-17.html", target="_blank", style={"textDecoration": "underline", "color": "#0066cc"})
+        ], style={"textAlign": "center", "marginBottom": "20px"})
+    ]),
 
     # Mean values table
     html.Div([
@@ -251,5 +257,5 @@ def predict_outcome(n_clicks, age, cpk, ef, platelets, sc, ss, time, anaemia, di
 
 # Run the app
 if __name__ == "__main__":
-    app.run_server(debug=True)
+    app.run_server(debug=False)
 
